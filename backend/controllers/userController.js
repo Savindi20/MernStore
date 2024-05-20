@@ -1,6 +1,7 @@
 import User from "../models/userModel.js";
 import asyncHandler from "../middlewares/asyncHandler.js";
 import bcrypt from "bcryptjs";
+import createToken from "../utils/createToken.js";
 
 const createUser = asyncHandler(async (req, res) => {
     const { username, email, password } = req.body;
@@ -25,6 +26,8 @@ const createUser = asyncHandler(async (req, res) => {
 
     try {
         await newUser.save();
+        createToken(res, newUser._id);
+
         res.status(201).json({
             _id:newUser._id,
             username:newUser.username,
@@ -37,5 +40,9 @@ const createUser = asyncHandler(async (req, res) => {
     }
 });
 
+const loginUser = asyncHandler(async (req, res) => {
 
-export {createUser};
+});
+
+
+export {createUser, loginUser};
