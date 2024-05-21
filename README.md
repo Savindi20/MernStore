@@ -56,7 +56,7 @@ npm install
 
 - **`Run Project`**
 ```
-npm start
+npm run frontend
 ```
 
 ##
@@ -65,48 +65,7 @@ npm start
 * TypeScript
 * MongoDB
 
-##
-- **`This Project All Configurations`**
-```
-tsc -v
-```
-
-```
-tsc -init
-```
-```
-npm init -y
-```
-```
-npm install express body-parser mongoose
-```
-```
-npm install --save-dev nodemon
-```
-```
-npm install --save-dev @types/node
-```
-```
-npm install --save-dev @types/express
-```
-```
-npm install dotenv
-```
-#  
-- **`Here You Can Add More Origins To Allow CORS`**
-```
-npm install cors
-```
-```
-npm install @types/cors
-```
-#
-- **`Not Detected Node Modules`**
-```
-npm install
-```
-
 - **`Run Project`**
 ```
-npm start
+npm run backend
 ```
