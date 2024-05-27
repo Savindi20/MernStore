@@ -30,10 +30,6 @@ const Navigation = () => {
     };
 
   return (
-    <div style={{ zIndex: 9999 }}>
-      {/* Burger menu for medium screens and smaller */}
-
-      {/* Desktop navigation */}
       <div
         style={{ zIndex: 9999 }}
         className={`${
@@ -76,21 +72,27 @@ const Navigation = () => {
             </div>
           </Link>
         </div>
-
-        <div className="relative">
-          <button
-            onClick={toggleDropdown}
-            className="flex items-center text-gray-800 focus:outline-none"
-          >
-            {userInfo ? (
-              <span className="text-white">{userInfo.username}</span>
-            ) : (
-              <></>
-            )}
-          </button>
-        </div>
+        <ul>
+              <li>
+                <Link
+                  to="/login"
+                  className="flex items-center mt-5 transition-transform transform hover:translate-x-2"
+                >
+                  <AiOutlineLogin className="mr-2 mt-[4px]" size={26} />
+                  <span className="hidden nav-item-name">LOGIN</span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/register"
+                  className="flex items-center mt-5 transition-transform transform hover:translate-x-2"
+                >
+                  <AiOutlineUserAdd size={26} />
+                  <span className="hidden nav-item-name">REGISTER</span>
+                </Link>
+              </li>
+            </ul>
       </div>
-    </div>
   );
 };
 export default Navigation
