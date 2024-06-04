@@ -5,16 +5,15 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 import { Route, RouterProvider, createRoutesFromElements } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
-
 import PrivateRoute from "./components/PrivateRoute";
 
 // Auth
 import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register";
-
 import AdminRoute from "./pages/Admin/AdminRoute";
 import Profile from "./pages/User/Profile";
 import UserList from "./pages/Admin/UserList";
+import CategoryList from "./pages/Admin/CategoryList";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,6 +28,7 @@ const router = createBrowserRouter(
 
       <Route path="/admin" element={<AdminRoute />}>
         <Route path="userlist" element={<UserList />} />
+        <Route path="categorylist" element={<CategoryList />} />
       </Route>
     </Route>
   )
