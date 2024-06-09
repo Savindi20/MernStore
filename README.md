@@ -8,6 +8,7 @@ This Project is introduced to FrontEnd Using React, TypeScript and Tailwind CSS
 * React
 * TypeScript
 * Tailwind CSS with Vite
+* Redux
 
 ##
 ## React Application
