@@ -67,7 +67,7 @@ const ProductList = () => {
   };
 
   return (
-    <div className="container xl:mx-[9rem] sm:mx-[0]">
+    <div className="container xl:mx-[3rem] sm:mx-[0]">
       <div className="flex flex-col md:flex-row">
         <AdminMenu />
         <div className="md:w-3/4 p-3">
@@ -108,7 +108,7 @@ const ProductList = () => {
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
-              <div className="two ml-10 ">
+              <div className="two">
                 <label htmlFor="name block">Price</label> <br />
                 <input
                   type="number"
@@ -128,7 +128,7 @@ const ProductList = () => {
                   onChange={(e) => setQuantity(e.target.value)}
                 />
               </div>
-              <div className="two ml-10 ">
+              <div className="two">
                 <label htmlFor="name block">Brand</label> <br />
                 <input
                   type="text"
