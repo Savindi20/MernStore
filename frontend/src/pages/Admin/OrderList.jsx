@@ -8,7 +8,7 @@ const OrderList = () => {
   const { data: orders, isLoading, error } = useGetOrdersQuery();
 
   return (
-    <>
+    <div className="ml-[5rem]">
       {isLoading ? (
         <Loader />
       ) : error ? (
@@ -86,7 +86,7 @@ const OrderList = () => {
           </tbody>
         </table>
       )}
-    </>
+    </div>
   );
 };
 
