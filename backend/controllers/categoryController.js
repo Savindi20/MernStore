@@ -1,6 +1,8 @@
 import Category from "../models/categoryModel.js";
 import asyncHandler from "../middlewares/asyncHandler.js";
 
+// logic handle krnw
+
 const createCategory = asyncHandler(async (req, res) => {
   try {
     const { name } = req.body;

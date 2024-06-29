@@ -11,3 +11,5 @@ const categorySchema = new mongoose.Schema({
 });
 
 export default mongoose.model("Category", categorySchema);
+
+//data structure ek define krnw

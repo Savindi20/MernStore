@@ -20,3 +20,5 @@ router.route("/categories").get(listCategory);
 router.route("/:id").get(readCategory);
 
 export default router;
+
+//application eke end point define krl controller function ekt map krnw
